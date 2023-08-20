@@ -1,13 +1,66 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'Value Sans Pro-Medium';
+  src: url('./assets/fonts/ValueSansPro-Medium.woff2');
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Value Sans Pro-Regular';
+  src: url('./assets/fonts/ValueSansPro-Regular.woff2');
+  font-style: normal;
+  font-weight: 400;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: Value Sans Pro, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 420px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 8px;
+}
+
+.wrapper {
+  padding: 30px;
+  border: solid 1px #cfcfcf;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.link {
+  color: #ffffff;
+  background-color: #1677ff;
+  padding: 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+}
+
+.link:hover {
+  opacity: .8;
+}
+
+.main__title {
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.wrapper__links {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.wrapper__link {
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
